@@ -1,0 +1,1328 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+새로운 크로스 플랫폼 PowerShell 사용 https://aka.ms/pscore6
+
+PS C:\Users\lekti> ssh root@27.96.131.169
+root@27.96.131.169's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-118-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon May 23 23:22:11 KST 2022
+
+  System load:  0.0               Processes:           104
+  Usage of /:   5.8% of 48.96GB   Users logged in:     0
+  Memory usage: 8%                IP address for eth0: 10.41.164.144
+  Swap usage:   0%
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+202 packages can be updated.
+146 updates are security updates.
+
+New release '20.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon May 23 23:11:34 2022 from 58.224.85.172
+root@s180dfb882b5:~# import time
+rt requests
+import pandas as pd
+import datetime
+
+while(1):
+
+
+
+    book = {}
+    response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+    book = response.json()
+
+
+
+    data = book['data']
+
+    bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+    bids.sor
+Command 'import' not found, but can be installed with:
+
+apt install imagemagick-6.q16
+apt install graphicsmagick-imagemagick-compat
+apt install imagemagick-6.q16hdri
+
+t_values('price', asceroot@s180dfb882b5:~# import requests
+alse, inplace=True)
+    bids = bids.reset_index(); del bids['index']
+    bids['type'] = 0
+
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    asks.sort_values('price', ascending=True, inplace=True)
+    asks['type'] = 1
+
+    #print (bids)
+    #print ("\n")
+    #print (asks)
+
+
+Command 'import' not found, but can be installed with:
+
+apt install imagemagick-6.q16
+apt install graphicsmagick-imagemagick-compat
+apt install imagemagick-6.q16hdri
+
+df = bids.append(asks)
+
+  root@s180dfb882b5:~# import pandas as pd
+  timestamp = datetime.datetime.now()
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+
+    df['quantity'] = df['quantity'].round(decimals=4)
+    df['timestamp'] = req_timestamp
+
+    #print (df)
+    #print ("\n")
+
+    df.to_csv("./2022-05-18-bithumb-orderbook.cs
+Command 'import' not found, but can be installed with:
+
+apt install imagemagick-6.q16
+apt install graphicsmagick-imagemagick-compat
+apt install imagemagick-6.q16hdri
+
+v", index=False, header=Falseroot@s180dfb882b5:~# import datetime
+, mode = 'a')
+
+    #should_write_header = os.path.exists(fn)
+    #if should_write_header == False:
+    #    df.to_csv(fn, index=False, header=True, mode = 'a')
+    #else:
+    #    df.to_csv(fn, index=False, header=False, mode = 'a')
+
+    time.sleep(4.9)
+Command 'import' not found, but can be installed with:
+
+apt install imagemagick-6.q16
+apt install graphicsmagick-imagemagick-compat
+apt install imagemagick-6.q16hdri
+
+root@s180dfb882b5:~#
+root@s180dfb882b5:~# while(1):
+-bash: syntax error near unexpected token `:'
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     book = {}
+
+Command 'book' not found, did you mean:
+
+  command 'brook' from snap brook (9999.0)
+  command 'boom' from deb alliance
+  command 'boom' from deb doomsday
+  command 'boom' from deb prboom-plus
+  command 'boog' from deb alliance
+  command 'ebook' from deb libebook-tools-perl
+  command 'look' from deb bsdmainutils
+  command 'abook' from deb abook
+
+See 'snap info <snapname>' for additional versions.
+
+root@s180dfb882b5:~#     response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     book = response.json()
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     data = book['data']
+
+Command 'data' not found, did you mean:
+
+  command 'date' from deb coreutils
+  command 'dat' from deb liballegro4-dev
+
+Try: apt install <deb name>
+
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     bids.sort_values('price', ascending=False, inplace=True)
+-bash: syntax error near unexpected token `'price','
+root@s180dfb882b5:~#     bids = bids.reset_index(); del bids['index']
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     bids['type'] = 0
+bids[type]: command not found
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     asks.sort_values('price', ascending=True, inplace=True)
+-bash: syntax error near unexpected token `'price','
+root@s180dfb882b5:~#     asks['type'] = 1
+asks[type]: command not found
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     #print (bids)
+root@s180dfb882b5:~#     #print ("\n")
+root@s180dfb882b5:~#     #print (asks)
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     df = bids.append(asks)
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     timestamp = datetime.datetime.now()
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     df['quantity'] = df['quantity'].round(decimals=4)
+-bash: syntax error near unexpected token `('
+root@s180dfb882b5:~#     df['timestamp'] = req_timestamp
+df[timestamp]: command not found
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     #print (df)
+root@s180dfb882b5:~#     #print ("\n")
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+-bash: syntax error near unexpected token `"./2022-05-18-bithumb-orderbook.csv",'
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     #should_write_header = os.path.exists(fn)
+root@s180dfb882b5:~#     #if should_write_header == False:
+root@s180dfb882b5:~#     #    df.to_csv(fn, index=False, header=True, mode = 'a')
+root@s180dfb882b5:~#     #else:
+root@s180dfb882b5:~#     #    df.to_csv(fn, index=False, header=False, mode = 'a')
+root@s180dfb882b5:~#
+root@s180dfb882b5:~#     time.sleep(4.9)
+-bash: syntax error near unexpected token `4.9'
+root@s180dfb882b5:~#
+root@s180dfb882b5:~# python3 homework.py&
+[1] 10529
+root@s180dfb882b5:~# python3
+Python 3.6.9 (default, Mar 15 2022, 13:55:28)
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import time
+rt reque>>> import requests
+rt pandas as pd
+import datetime
+
+while(1):
+
+
+
+    book = {}
+    response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+    book = response.json()
+
+
+
+    data = book['data']
+
+    bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+    bids.sort_values('price', ascending=False, inplace=True)
+    bids = bids.reset_index(); del bids['index']
+    bids['type'] = 0
+
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    asks.sort_values('price', ascending=True, inplace=True)
+    asks['type'] = 1 >>> import pandas as pd
+print (bids)
+    #print ("\n")
+    #print (asks)
+
+    df = bids.append(asks)
+
+    timestamp = datetime.datetime.now()
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+
+    df['quantity'] = df['quantity'].round(decimals=4)
+    df['timestamp'] = req_timestamp
+
+    #print (df)
+    #print ("\n")
+
+    df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+
+    #should_write_header = os.path.exists(fn)
+    #if should_write_header == False:
+    #    df.to_csv(fn, index=False, header=True, mode = 'a')
+    #else:
+    #    df.to_csv(fn, index=False, header=False, mode = 'a')
+
+    time.sleep(4.9)>>> import datetime
+>>>
+>>> while(1):
+...
+...
+...
+  File "<stdin>", line 4
+
+    ^
+IndentationError: expected an indented block
+>>>     book = {}
+  File "<stdin>", line 1
+    book = {}
+    ^
+IndentationError: unexpected indent
+>>>     response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+  File "<stdin>", line 1
+    response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+    ^
+IndentationError: unexpected indent
+>>>     book = response.json()
+  File "<stdin>", line 1
+    book = response.json()
+    ^
+IndentationError: unexpected indent
+>>>
+>>>
+>>>
+>>>     data = book['data']
+  File "<stdin>", line 1
+    data = book['data']
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 1
+    bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     bids.sort_values('price', ascending=False, inplace=True)
+  File "<stdin>", line 1
+    bids.sort_values('price', ascending=False, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     bids = bids.reset_index(); del bids['index']
+  File "<stdin>", line 1
+    bids = bids.reset_index(); del bids['index']
+    ^
+IndentationError: unexpected indent
+>>>     bids['type'] = 0
+  File "<stdin>", line 1
+    bids['type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>
+...     asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 2
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     asks.sort_values('price', ascending=True, inplace=True)
+  File "<stdin>", line 1
+    asks.sort_values('price', ascending=True, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     asks['type'] = 1
+  File "<stdin>", line 1
+    asks['type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #print (bids)
+...     #print ("\n")
+...     #print (asks)
+...
+>>>     df = bids.append(asks)
+  File "<stdin>", line 1
+    df = bids.append(asks)
+    ^
+IndentationError: unexpected indent
+>>>
+...     timestamp = datetime.datetime.now()
+  File "<stdin>", line 2
+    timestamp = datetime.datetime.now()
+    ^
+IndentationError: unexpected indent
+>>>     req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+  File "<stdin>", line 1
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df['quantity'] = df['quantity'].round(decimals=4)
+  File "<stdin>", line 1
+    df['quantity'] = df['quantity'].round(decimals=4)
+    ^
+IndentationError: unexpected indent
+>>>     df['timestamp'] = req_timestamp
+  File "<stdin>", line 1
+    df['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+...     #print (df)
+...     #print ("\n")
+...
+...     df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+  File "<stdin>", line 5
+    df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #should_write_header = os.path.exists(fn)
+...     #if should_write_header == False:
+...     #    df.to_csv(fn, index=False, header=True, mode = 'a')
+...     #else:
+...     #    df.to_csv(fn, index=False, header=False, mode = 'a')
+...
+>>>     time.sleep(4.9)
+  File "<stdin>", line 1
+    time.sleep(4.9)
+    ^
+IndentationError: unexpected indent
+>>> import time
+>>> import requests
+>>> import pandas as pd
+>>> import datetime
+>>>
+>>> while(1):
+...
+...
+...
+  File "<stdin>", line 4
+
+    ^
+IndentationError: expected an indented block
+>>>     book = {}
+  File "<stdin>", line 1
+    book = {}
+    ^
+IndentationError: unexpected indent
+>>>     response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+  File "<stdin>", line 1
+    response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+    ^
+IndentationError: unexpected indent
+>>>     book = response.json()
+  File "<stdin>", line 1
+    book = response.json()
+    ^
+IndentationError: unexpected indent
+>>>
+>>>
+>>>
+>>>     data = book['data']
+  File "<stdin>", line 1
+    data = book['data']
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+bids.sort_value  File "<stdin>", line 1
+    bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     bids.sort_values('price', ascending=False, inplace=True)
+  File "<stdin>", line 1
+    bids.sort_values('price', ascending=False, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     bids = bids.reset_index(); del bids['index']
+  File "<stdin>", line 1
+    bids = bids.reset_index(); del bids['index']
+    ^
+IndentationError: unexpected indent
+>>>     bids['type'] = 0
+  File "<stdin>", line 1
+    bids['type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>
+...     asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 2
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     asks.sort_values('price', ascending=True, inplace=True)
+sks['typ  File "<stdin>", line 1
+    asks.sort_values('price', ascending=True, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     asks['type'] = 1
+  File "<stdin>", line 1
+    asks['type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #print (bids)
+...     #print ("\n")
+...     #print (asks)
+...
+>>>     df = bids.append(asks)
+  File "<stdin>", line 1
+    df = bids.append(asks)
+    ^
+IndentationError: unexpected indent
+>>>
+...     timestamp = datetime.datetime.now()
+  File "<stdin>", line 2
+    timestamp = datetime.datetime.now()
+    ^
+IndentationError: unexpected indent
+>>>     req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+  File "<stdin>", line 1
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df['quantity'] = df['quantity'].round(decimals=4)
+  File "<stdin>", line 1
+    df['quantity'] = df['quantity'].round(decimals=4)
+    ^
+IndentationError: unexpected indent
+>>>     df['timestamp'] = req_timestamp
+  File "<stdin>", line 1
+    df['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+...     #print (df)
+...     #print ("\n")
+...
+...     df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+  File "<stdin>", line 5
+    df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #should_write_header = os.path.exists(fn)
+...     #if should_write_header == False:
+...     #    df.to_csv(fn, index=False, header=True, mode = 'a')
+...     #else:
+...     #    df.to_csv(fn, index=False, header=False, mode = 'a')
+...
+>>>     time.sleep(4.9)
+  File "<stdin>", line 1
+    time.sleep(4.9)
+    ^
+IndentationError: unexpected indent
+>>> import time
+>>> import requests
+>>> import pandas as pd
+>>> import datetime
+>>>
+>>> while(1):
+...
+...
+...
+  File "<stdin>", line 4
+
+    ^
+IndentationError: expected an indented block
+>>>     book = {}
+  File "<stdin>", line 1
+    book = {}
+    ^
+IndentationError: unexpected indent
+>>>     response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+  File "<stdin>", line 1
+    response = requests.get ('https://api.bithumb.com/public/orderbook/BTC_KRW/?count=5')
+    ^
+IndentationError: unexpected indent
+>>>     book = response.json()
+  File "<stdin>", line 1
+    book = response.json()
+    ^
+IndentationError: unexpected indent
+>>>
+>>>
+>>>
+>>>     data = book['data']
+  File "<stdin>", line 1
+    data = book['data']
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 1
+    bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     bids.sort_values('price', ascending=False, inplace=True)
+  File "<stdin>", line 1
+    bids.sort_values('price', ascending=False, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     bids = bids.reset_index(); del bids['index']
+  File "<stdin>", line 1
+    bids = bids.reset_index(); del bids['index']
+    ^
+IndentationError: unexpected indent
+>>>     bids['type'] = 0
+  File "<stdin>", line 1
+    bids['type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>
+...     asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 2
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>     asks.sort_values('price', ascending=True, inplace=True)
+  File "<stdin>", line 1
+    asks.sort_values('price', ascending=True, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     asks['type'] = 1
+  File "<stdin>", line 1
+    asks['type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #print (bids)
+...     #print ("\n")
+...     #print (asks)
+...
+>>>     df = bids.append(asks)
+  File "<stdin>", line 1
+    df = bids.append(asks)
+    ^
+IndentationError: unexpected indent
+>>>
+...     timestamp = datetime.datetime.now()
+  File "<stdin>", line 2
+    timestamp = datetime.datetime.now()
+    ^
+IndentationError: unexpected indent
+>>>     req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+  File "<stdin>", line 1
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df['quantity'] = df['quantity'].round(decimals=4)
+  File "<stdin>", line 1
+    df['quantity'] = df['quantity'].round(decimals=4)
+    ^
+IndentationError: unexpected indent
+>>>     df['timestamp'] = req_timestamp
+  File "<stdin>", line 1
+    df['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+...     #print (df)
+...     #print ("\n")
+...
+...     df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+  File "<stdin>", line 5
+    df.to_csv("./2022-05-18-bithumb-orderbook.csv", index=False, header=False, mode = 'a')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     #should_write_header = os.path.exists(fn)
+...     #if should_write_header == False:
+...     #df.to_csv(fn, index=False, header=True, mode = 'a')
+...     #else:
+...     #df.to_csv(fn, index=False, header=False, mode = 'a')
+...
+>>>     time.sleep(4.9)
+  File "<stdin>", line 1
+    time.sleep(4.9)
+    ^
+IndentationError: unexpected indent
+>>>
+>>> import time
+>>> import requests
+>>> import pandas as pd
+>>> import datetime
+>>>
+>>> while(1):
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>> while(1):
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>> import time
+>>> import requests
+>>> import pandas as pd
+>>> import datetime
+>>> while(1):
+... book={}
+  File "<stdin>", line 2
+    book={}
+       ^
+IndentationError: expected an indented block
+>>> while(1)
+  File "<stdin>", line 1
+    while(1)
+           ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>>
+>>> #! /usr/bin/env python
+... # rdate -s time.nist.gov
+...
+>>> import sys
+>>> import datetime
+>>> import json
+>>> import csv
+>>> import os
+>>> import requests
+>>> import time
+>>> import pandas as pd
+>>> import argparse
+>>>
+>>> import timeit
+>>> import urllib3
+>>> import numpy as np
+>>> import collections
+>>>
+>>> def agg_order_book (bids, asks):
+...
+...     group_bid = (bids.groupby('price').sum()).reset_index()
+...     group_bid = group_bid.sort_values('price', ascending=False)
+...
+>>>     group_ask = (asks.groupby('price').sum()).reset_index()
+  File "<stdin>", line 1group_a
+    group_ask = (asks.groupby('price').sum()).reset_index()
+    ^
+IndentationError: unexpected indent
+>>>     group_ask = group_ask.sort_values('price', ascending=True)
+  File "<stdin>", line 1
+    group_ask = group_ask.sort_values('price', ascending=True)
+    ^
+IndentationError: unexpected indent
+>>>     group_ask['type'] = 1
+  File "<stdin>", line 1
+    group_ask['type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     return group_bid, group_ask
+  File "<stdin>", line 1
+    return group_bid, group_ask
+    ^
+def bithIndentationError: unexpected indent
+>>>
+>>> def bithumb_live_book(data, req_timestamp):
+...     #timestamp,price,type,quantity
+...     data = data['data']
+...     bids = (pd.DataFrame(data['bids'])).apply(pd.to_numeric,errors='ignore')
+...
+>>>     bids.sort_values('price', ascending=False, inplace=True)
+  File "<stdin>", line 1
+    bids.sort_values('price', ascending=False, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     bids = bids.reset_index(); del bids['index']
+  File "<stdin>", line 1
+    bids = bids.reset_index(); del bids['index']
+    ^
+IndentationError: unexpected indent
+>>>     bids['type'] = 0
+  File "<stdin>", line 1
+    bids['type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>
+...     asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 2
+    asks = (pd.DataFrame(data['asks'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     asks.sort_values('price', ascending=True, inplace=True)
+  File "<stdin>", line 1
+    asks.sort_values('price', ascending=True, inplace=True)
+    ^
+IndentationError: unexpected indent
+>>>     asks['type'] = 1
+  File "<stdin>", line 1
+    asks['type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df = bids.append(asks)
+  File "<stdin>", line 1
+    df = bids.append(asks)
+    ^
+IndentationError: unexpected indent
+>>>     df['quantity'] = df['quantity'].round(decimals=4)
+  File "<stdin>", line 1
+    df['quantity'] = df['quantity'].round(decimals=4)
+    ^
+IndentationError: unexpected indent
+>>>     df['timestamp'] = req_timestamp
+  File "<stdin>", line 1
+    df['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+...     return df
+  File "<stdin>", line 2
+    return df
+    ^
+IndentationError: unexpected indent
+>>>
+>>> def agg_diff_trade (diff):
+...
+...     df = diff
+...     df['count'] = ''
+...     if df.empty:
+...         df = df.append ({'price':0, 'total':0, 'transaction_date':0, 'type':0, 'units_traded':0, 'count':0}, ignore_index=True)
+...         return df
+...
+>>>     group_bid = df[(df.type == 0)].copy().reset_index()
+  File "<stdin>", line 1
+    group_bid = df[(df.type == 0)].copy().reset_index()
+    ^
+IndentationError: unexpected indent
+>>>     group_ask = df[(df.type == 1)].copy().reset_index()
+  File "<stdin>", line 1
+    group_ask = df[(df.type == 1)].copy().reset_index()
+    ^
+IndentationError: unexpected indent
+>>>
+...     if not group_bid.empty:
+  File "<stdin>", line 2
+    if not group_bid.empty:
+    ^
+IndentationError: unexpected indent
+>>>         quant = group_bid['units_traded'].sum()
+  File "<stdin>", line 1
+    quant = group_bid['units_traded'].sum()
+    ^
+IndentationError: unexpected indent
+>>>         w_price = int(group_bid['total'].sum() / quant)
+  File "<stdin>", line 1
+    w_price = int(group_bid['total'].sum() / quant)
+    ^
+IndentationError: unexpected indent
+>>>
+...         group_bid.loc[0, 'units_traded'] = quant
+  File "<stdin>", line 2
+    group_bid.loc[0, 'units_traded'] = quant
+    ^
+IndentationError: unexpected indent
+>>>         group_bid.loc[0, 'price'] = w_price
+  File "<stdin>", line 1
+    group_bid.loc[0, 'price'] = w_price
+            ^
+IndentationError: unexpected indent
+>>>         group_bid.loc[0, 'type'] = 0
+  File "<stdin>", line 1
+    group_bid.loc[0, 'type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>         group_bid.loc[0, 'count'] = len(group_bid.index)
+  File "<stdin>", line 1
+    group_bid.loc[0, 'count'] = len(group_bid.index)
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     if not group_ask.empty:
+  File "<stdin>", line 1
+    if not group_ask.empty:
+    ^
+IndentationError: unexpected indent
+>>>         quant = group_ask['units_traded'].sum()
+  File "<stdin>", line 1
+    quant = group_ask['units_traded'].sum()
+    ^
+IndentationError: unexpected indent
+>>>         w_price = int(group_ask['total'].sum() / quant)
+  File "<stdin>", line 1
+    w_price = int(group_ask['total'].sum() / quant)
+    ^
+IndentationError: unexpected indent
+>>>
+>>>         group_ask.loc[0, 'units_traded'] = quant
+  File "<stdin>", line 1
+    group_ask.loc[0, 'units_traded'] = quant
+    ^
+IndentationError: unexpected indent
+>>>         group_ask.loc[0, 'price'] = w_price
+  File "<stdin>", line 1
+    group_ask.loc[0, 'price'] = w_price
+    ^
+IndentationError: unexpected indent
+>>>         group_ask.loc[0, 'type'] = 1
+  File "<stdin>", line 1
+    group_ask.loc[0, 'type'] = 1
+    ^
+IndentationError: unexpected indent
+>>>         group_ask.loc[0, 'count'] = len(group_ask.index)
+  File "<stdin>", line 1
+    group_ask.loc[0, 'count'] = len(group_ask.index)
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df = (group_bid.head(1)).append(group_ask.head(1))
+  File "<stdin>", line 1
+    df = (group_bid.head(1)).append(group_ask.head(1))
+    ^
+IndentationError: unexpected indent
+>>>     df['total'] = df['total'].astype(int)
+  File "<stdin>", line 1
+    df['total'] = df['total'].astype(int)
+    ^
+IndentationError: unexpected indent
+>>>     df['price'] = df['price'].astype(int)
+  File "<stdin>", line 1
+    df['price'] = df['price'].astype(int)
+    ^
+IndentationError: unexpected indent
+>>>     df['type'] = df['type'].astype(int)
+  File "<stdin>", line 1
+    df['type'] = df['type'].astype(int)
+    ^
+IndentationError: unexpected indent
+  df['co>>>     df['count'] = df['count'].astype(int)
+  File "<stdin>", line 1
+    df['count'] = df['count'].astype(int)
+    ^
+IndentationError: unexpected indent
+>>>     del df['index']
+  File "<stdin>", line 1
+    del df['index']
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     return df
+  File "<stdin>", line 1
+    return df
+    ^
+IndentationError: unexpected indent
+>>>
+...
+>>> first_seq = True
+>>> df1 = ''
+>>> bithumb_empty_df = pd.DataFrame(columns=['price', 'total', 'transaction_date', 'type', 'units_traded'])
+f bithum>>> def bithumb_live_trade(data, req_timestamp):
+...
+...     global df1
+...     global first_seq
+...
+>>>     df = (pd.DataFrame(data['data'])).apply(pd.to_numeric,errors='ignore')
+  File "<stdin>", line 1
+    df = (pd.DataFrame(data['data'])).apply(pd.to_numeric,errors='ignore')
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df.ix[df['type'] == 'bid', 'type'] = 0
+  File "<stdin>", line 1
+    df.ix[df['type'] == 'bid', 'type'] = 0
+    ^
+IndentationError: unexpected indent
+>>>     df.ix[df['type'] == 'ask', 'type'] = 1
+  File "<stdin>", line 1
+    df.ix[df['type'] == 'ask', 'type'] = 1
+    ^
+    df =IndentationError: unexpected indent
+>>>     df = (df.sort_values(by=['transaction_date'], ascending=False)).reset_index()
+  File "<stdin>", line 1
+    df = (df.sort_values(by=['transaction_date'], ascending=False)).reset_index()
+    ^
+IndentationError: unexpected indent
+>>>
+...     if first_seq:
+  File "<stdin>", line 2
+    if first_seq:
+    ^
+IndentationError: unexpected indent
+>>>         df1 = df
+  File "<stdin>", line 1
+    df1 = df
+    ^
+IndentationError: unexpected indent
+>>>         first_seq = False
+  return  File "<stdin>", line 1
+    first_seq = False
+    ^
+IndentationError: unexpected indent
+>>>         return None, None
+  File "<stdin>", line 1
+    return None, None
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     df2 = df
+  File "<stdin>", line 1
+    df2 = df
+    ^
+IndentationError: unexpected indent
+>>>
+...     ###
+...     #print df1
+...     #print df2
+...     #print req_timestamp
+...     #print df2.isin(df1.head(1))
+...
+...     _index = 50
+  File "<stdin>", line 8
+    _index = 50
+    ^
+IndentationError: unexpected indent
+>>>     if not df1.empty:
+   _h =  File "<stdin>", line 1
+    if not df1.empty:
+    ^
+IndentationError: unexpected indent
+>>>         _h = df1.head(1)
+  File "<stdin>", line 1
+    _h = df1.head(1)
+    ^
+IndentationError: unexpected indent
+>>>         _l_index = df2[(df2['price']==_h['price'].values[0]) & (df2['units_traded']==_h['units_traded'].values[0]) & (df2['transaction_date']==_h['transaction_date'].values[0]) & (df2['type']==_h['type'].values[0])].index.tolist()
+  File "<stdin>", line 1
+    _l_index = df2[(df2['price']==_h['price'].values[0]) & (df2['units_traded']==_h['units_traded'].values[0]) & (df2['transaction_date']==_h['transaction_date'].values[0]) & (df2['type']==_h['type'].values[0])].index.tolist()
+    ^
+IndentationError: unexpected indent
+>>>         if _l_index:
+  File "<stdin>", line 1
+    if _l_index:
+    ^
+IndentationError: unexpected indent
+>>>             _index = _l_index[0]
+  File "<stdin>", line 1
+    _index = _l_index[0]
+    ^
+IndentationError: unexpected indent
+>>>         #print _index
+...         #print '\n'
+...
+...     diff = bithumb_empty_df
+       d  File "<stdin>", line 4
+    diff = bithumb_empty_df
+    ^
+IndentationError: unexpected indent
+>>>     if _index > 0:
+  File "<stdin>", line 1
+    if _index > 0:
+    ^
+IndentationError: unexpected indent
+>>>         diff = df2[0:_index]
+  File "<stdin>", line 1
+    diff = df2[0:_index]
+    ^
+IndentationError: unexpected indent
+>>>
+...     df1 = df
+  File "<stdin>", line 2
+    df1 = df
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     diff = agg_diff_trade (diff)
+  File "<stdin>", line 1
+    df[
+    diff = agg_diff_trade (diff)
+    ^
+IndentationError: unexpected indent
+>>>     diff['timestamp'] = req_timestamp
+  File "<stdin>", line 1
+    diff['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>     df['timestamp'] = req_timestamp
+
+    r  File "<stdin>", line 1
+    df['timestamp'] = req_timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+...     return diff[['price', 'total', 'transaction_date', 'type', 'units_traded', 'timestamp', 'count']], df
+  File "<stdin>", line 2
+    return diff[['price', 'total', 'transaction_date', 'type', 'units_traded', 'timestamp', 'count']], df
+    ^
+IndentationError: unexpected indent
+>>>
+>>> def write_csv(fn, df):
+...     should_write_header = os.path.exists(fn)
+...     if should_write_header == False:
+...         df.to_csv(fn, index=False, header=True, mode = 'a')
+...     else:
+...         df.to_csv(fn, index=False, header=False, mode = 'a')
+...
+>>> def http_get(url):
+...     return (session.get(url, headers={ 'User-Agent': 'Mozilla/5.0' }, verify=False, timeout=1)).json()
+...
+>>> def get_book_trade(ex, url, req_timestamp):
+...
+...     book = trade = {}
+...     try:
+...         book = (session.get(url[0], headers={ 'User-Agent': 'Mozilla/5.0' }, verify=False, timeout=1)).json()
+...         trade = (session.get(url[1], headers={ 'User-Agent': 'Mozilla/5.0' }, verify=False, timeout=1)).json()
+...     except:
+...         return None, None
+...
+...     return book, trade
+...
+... def pull_csv_book_trade():
+  File "<stdin>", line 12    time
+    def pull_csv_book_trade():
+      ^
+SyntaxError: invalid syntax
+>>>
+...     timestamp = last_update_time = datetime.datetime.now()
+  File "<stdin>", line 2
+    timestamp = last_update_time = datetime.datetime.now()
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     while 1:
+  File "<stdin>", line 1
+    while 1:
+
+    ^
+IndentationError: unexpected indent
+>>>
+...         timestamp = datetime.datetime.now()
+  File "<stdin>", line 2
+    timestamp = datetime.datetime.now()
+    ^
+IndentationError: unexpected indent
+>>>         if ((timestamp-last_update_time).total_seconds() < 1.0):
+.strftim  File "<stdin>", line 1
+    if ((timestamp-last_update_time).total_seconds() < 1.0):
+    ^
+IndentationError: unexpected indent
+>>>             continue
+  File "<stdin>", line 1
+    continue
+    ^
+IndentationError: unexpected indent
+>>>         last_update_time = timestamp
+  File "<stdin>", line 1
+    last_update_time = timestamp
+    ^
+IndentationError: unexpected indent
+>>>
+>>>         req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S.%f')
+  File "<stdin>", line 1
+    req_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S.%f')
+    ^
+IndentationError: unexpected indent
+>>>         req_time = req_timestamp.split(' ')[0]
+  File "<stdin>", line 1
+    req_time = req_timestamp.split(' ')[0]
+    ^
+IndentationError: unexpected indent
+>>>
+>>>         _dict_book_trade = {}
+  File "<stdin>", line 1
+    _dict_book_trade = {}
+    ^
+IndentationError: unexpected indent
+>>>         #start_time = timeit.default_timer()
+...         _err = False
+  File "<stdin>", line 2
+    _err = False
+    ^
+IndentationError: unexpected indent
+>>>         for ex in _list_ex:
+  File "<stdin>", line 1
+    for ex in _list_ex:
+    ^
+IndentationError: unexpected indent
+>>>             book, trade = get_book_trade (ex, _dict_url[ex], req_timestamp)
+  File "<stdin>", line 1
+    book, trade = get_book_trade (ex, _dict_url[ex], req_timestamp)
+    ^
+IndentationError: unexpected indent
+>>>             if book is None or trade is None:
+  File "<stdin>", line 1
+    if book is None or trade is None:
+    ^
+IndentationError: unexpected indent
+>>>                 _err = True
+  File "<stdin>", line 1
+    _err = True
+    ^
+IndentationError: unexpected indent
+>>>                 break
+  File "<stdin>", line 1
+    break
+    ^
+IndentationError: unexpected indent
+>>>             if not book or not trade:
+  File "<stdin>", line 1
+    if not book or not trade:
+    ^
+        IndentationError: unexpected indent
+>>>                 _err = True
+  File "<stdin>", line 1
+    _err = True
+    ^
+IndentationError: unexpected indent
+>>>                 break
+  File "<stdin>", line 1
+    break
+    ^
+IndentationError: unexpected indent
+>>>             _dict_book_trade.update ({ex: [book, trade]})
+  File "<stdin>", line 1
+    _dict_book_trade.update ({ex: [book, trade]})
+    ^
+IndentationError: unexpected indent
+>>>
+>>>         #delay = timeit.default_timer() - start_time
+...         #print 'fetch delay: %.2fs' % delay
+...
+...         if _err == True:
+  File "<stdin>", line 4
+    if _err == True:
+    ^
+IndentationError: unexpected indent
+>>>             continue
+  File "<stdin>", line 1
+    continue
+    ^
+IndentationError: unexpected indent
+>>>
+...         for ex in _list_ex:
+  File "<stdin>", line 2
+    for ex in _list_ex:
+    ^
+IndentationError: unexpected indent
+>>>             book_fn = '%s/%s-only-%s-%s-book.csv'% (csv_dir, req_time, ex, currency)
+  File "<stdin>", line 1
+    book_fn = '%s/%s-only-%s-%s-book.csv'% (csv_dir, req_time, ex, currency)
+    ^
+IndentationError: unexpected indent
+>>>             trade_fn = '%s/%s-only-%s-%s-trade.csv'% (csv_dir, req_time, ex, currency)
+  File "<stdin>", line 1
+    trade_fn = '%s/%s-only-%s-%s-trade.csv'% (csv_dir, req_time, ex, currency)
+    ^
+IndentationError: unexpected indent
+>>>
+...             book_df = bithumb_live_book (book, req_timestamp)
+  File "<stdin>", line 2
+    book_df = bithumb_live_book (book, req_timestamp)
+    ^
+IndentationError: unexpected indent
+>>>             trade_df, raw_trade_df = bithumb_live_trade (trade, req_timestamp)
+  File "<stdin>", line 1
+    trade_df, raw_trade_df = bithumb_live_trade (trade, req_timestamp)
+    ^
+IndentationError: unexpected indent
+>>>
+...             if trade_df is None:
+  File "<stdin>", line 2
+    if trade_df is None:
+    ^
+IndentationError: unexpected indent
+>>>                 continue
+  File "<stdin>", line 1
+    continue
+    ^
+IndentationError: unexpected indent
+>>>
+>>>             write_csv(book_fn, book_df)
+  File "<stdin>", line 1
+    write_csv(book_fn, book_df)
+    ^
+IndentationError: unexpected indent
+>>>             write_csv(trade_fn, trade_df)
+  File "<stdin>", line 1
+    write_csv(trade_fn, trade_df)
+    ^
+IndentationError: unexpected indent
+>>>
+...
+>>> from requests.adapters import HTTPAdapter
+>>> from requests.packages.urllib3.util.retry import Retry
+>>>
+>>> def init_session():
+...     session = requests.Session()
+...     retry = Retry (connect=1, backoff_factor=0.1)
+...     adapter = HTTPAdapter (max_retries=retry)
+...     session.mount('http://', adapter)
+...     session.mount('https://', adapter)
+...
+...     return session
+...
+>>> def parse_args():
+...     parser = argparse.ArgumentParser()
+...     parser.add_argument('--currency', help="choose crypto-currency", choices = ('BTC','ETH'), dest='currency', action="store")
+...
+>>>     return parser.parse_args()
+  File "<stdin>", line 1
+    return parser.parse_args()
+    ^
+IndentationError: unexpected indent
+list_e>>>
+>>>
+>>> _list_ex = ['bithumb']
+>>> csv_dir = './raw/'
+>>> _dict_url = {}
+>>> currency = ''
+>>>
+>>> session = init_session()
+>>>
+>>> def main():
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>>     global _dict_url
+  File "<stdin>", line 1
+    global _dict_url
+    ^
+IndentationError: unexpected indent
+>>>     global currency
+  File "<stdin>", line 1
+    global currency
+    ^
+IndentationError: unexpected indent
+>>>
+>>>     urllib3.disable_warnings()
+  File "<stdin>", line 1
+    urllib3.disable_warnings()
+    ^
+IndentationError: unexpected indent
+>>>     args = parse_args()
+  File "<stdin>", line 1
+    args = parse_args()
+    ^
+IndentationError: unexpected indent
+>>>     currency = args.currency
+  File "<stdin>", line 1
+    currency = args.currency
+    ^
+IndentationError: unexpected indent
+  _dict>>>
+>>>     _dict_url = {'bithumb': ['https://api.bithumb.com/public/orderbook/%s_KRW/?count=10' % currency,
+  File "<stdin>", line 1
+    _dict_url = {'bithumb': ['https://api.bithumb.com/public/orderbook/%s_KRW/?count=10' % currency,
+    ^
+IndentationError: unexpected indent
+>>>     'https://api.bithumb.com/public/transaction_history/%s_KRW/?count=50' % currency]}
+  File "<stdin>", line 1
+    'https://api.bithumb.com/public/transaction_history/%s_KRW/?count=50' % currency]}
+    ^
+IndentationError: unexpected indent
+>>>
+...     pull_csv_book_trade()
+  File "<stdin>", line 2
+    pull_csv_book_trade()
+    ^
+IndentationError: unexpected indent
+>>>
+...
+>>> if __name__ == '__main__':
+...     main()
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'main' is not defined
+>>> client_loop: send disconnect: Connection reset
+PS C:\Users\lekti>
